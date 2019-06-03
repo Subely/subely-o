@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1"
+  }
+}

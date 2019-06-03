@@ -1,0 +1,6 @@
+# Ignore Mac DS_Store files
+/node_modules
+node_modules
+.DS_Store
+dashboard/assets/.DS_Store
+node_modules/

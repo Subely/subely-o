@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="A different hosting service">
+<meta name="keywords" content="Subely, sub, hosting, dropbox hosting, simple hosting, free hosting, flatfile hosting">
+<meta name="author" content="Subely Co">
+
+<!-- Title -->
+<title>Subely - Impressive Webdesign &amp; Front-End Development</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="../../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../assets/img/favicon_152x152.png">
+
+<!-- Google Web Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+
+<!-- CSS Animations -->
+<link rel="stylesheet" href="../../assets/css/animate.css" />
+
+<!-- CSS Template -->
+<link rel="stylesheet" href="../../assets/css/base.css" />
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header">
+
+</header>
+<!-- Header / End -->
+
+<!-- Content -->
+<div id="content">
+    <section id="packages" class="section bg-black">
+        <div class="container">
+           <div id="packages-and-plans" class="row text-center" style="margin-top:100px;">
+
+
+           </div>
+        </div>
+
+
+
+
+
+                <!--<div class="custom-alerts alert alert-success fade in">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+
+                </div>  -->
+
+
+              <!--  <div class="custom-alerts alert alert-danger fade in">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+
+                </div> -->
+<div style="margin-top: 100px;" id="payment" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Stripe</h4>
+      </div>
+      <div class="modal-body">
+
+                <div class="panel-heading">Pay with Stripe</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="payment-form" role="form" method="POST">
+
+                        <div class="form-group">
+                            <label for="card_no" class="col-md-4 control-label">Card No</label>
+                            <div class="col-md-6">
+                                <input id="card_no" type="text" name="card_no" value="" autofocus>
+
+                                  <!--  <span class="help-block">
+                                        <strong></strong>
+                                    </span> -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ccExpiryMonth" class="col-md-4 control-label">Expiry Month</label>
+                            <!--
+                            <div class="col-md-6">
+                                <input id="ccExpiryMonth" type="text"  name="ccExpiryMonth" value="" autofocus>
+
+                            </div> -->
+                            <div class="col-md-6">
+                              <select id='ccExpiryMonth' style="width: 65%;">
+                                <option value='' selected>--Select Month--</option>
+                                <option value='1'>January</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ccExpiryYear" class="col-md-4 control-label">Expiry Year</label>
+                            <div class="col-md-6">
+                              <select id='ccExpiryYear' style="width: 65%;">
+                                <option value='' selected>--Select Year--</option>
+                                <option value='2018'>2018</option>
+                                <option value='2019'>2019</option>
+                                <option value='2020'>2020</option>
+                                <option value='2021'>2021</option>
+                                <option value='2022'>2022</option>
+                                <option value='2023'>2023</option>
+                                <option value='2024'>2024</option>
+                                <option value='2025'>2025</option>
+                                <option value='2026'>2026</option>
+                                <option value='2027'>2027</option>
+                                <option value='2028'>2028</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvvNumber" class="col-md-4 control-label">CVV No.</label>
+                            <div class="col-md-6">
+                                <input id="cvvNumber" type="text"  name="cvvNumber" value="" autofocus>
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="package-name" value="">
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button id="submit-payment" class="btn btn-primary">
+                                    Pay
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <p>Some text in the modal.</p>
+      </div>
+
+
+<div style="margin-top: 100px;" id="payment-response" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Stripe</h4>
+      </div>
+      <div class="modal-body">
+
+        <p id="display-response"></p>
+        <a type="button" class="btn btn-success" data-dismiss="modal">OK</a>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+    </section>
+</div>
+<!-- Content / End -->
+
+<!-- Ajax Modal -->
+<div id="ajax-modal"></div>
+
+<!-- Loading Overlay -->
+<div id="loading-overlay"></div>
+
+<!-- Mobile Navigation -->
+<button id="mobile-nav-toggle" class="icon icon-sm icon-circle icon-primary" data-target="mobile-nav"><i class="ti-menu"></i><i class="ti-close"></i></button>
+<nav id="mobile-nav">
+
+</nav>
+
+<div id="tmp"></div>
+
+<!-- JS Libraries -->
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+
+<!-- JS Plugins -->
+<script src="../../assets/js/plugins.js"></script>
+
+<!-- JS Core -->
+<script src="../../assets/js/actions.js"></script>
+<script src="../../assets/js/components.js"></script>
+<script src="../../assets/js/base.js"></script>
+
+<script src="../../assets/js/bundle.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44410203-1', 'Subely.pl');
+  ga('send', 'pageview');
+
+
+</script>
+
+</body>
+
+</html>

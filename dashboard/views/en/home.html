@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="Subely -- Web hosting solution">
+<meta name="keywords" content="Subely, sub, subs, sub hosting, dropbox hosting, dropbox web hosting, webhosting, free webhosting, free hosting, alternative">
+<meta name="author" content="Subely Co">
+
+<!-- Title -->
+<title>Subely - Impressive Webdesign &amp; Front-End Development</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="../../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../assets/img/favicon_152x152.png">
+
+<!-- Google Web Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+
+<!-- CSS Animations -->
+<link rel="stylesheet" href="../../assets/css/animate.css" />
+
+<!-- CSS Template -->
+<link rel="stylesheet" href="../../assets/css/base.css" />
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header">
+
+</header>
+<!-- Header / End -->
+
+<!-- Content -->
+<div class="container" id="content">
+
+    <section id="home" class="section dark bg-black" style="background-image: url('assets/img/photos/bg-space-grey.jpg')">
+
+        <div class="section-wrapper">
+
+            <div class="subs-wrapper" >
+                <div id="subs" class="vertical-center">
+                  <div class="col-md-10 col-md-offset-1 subs-header">
+                    <div class="subs--top--right">
+                      <!-- <a href="" class="no-animate btn btn-xs btn-default" id="toggle-sub-view" style="color: black;"><i class="fa fa-th" aria-hidden="true"></i></a> -->
+                      <a data-change-view="false" data-toggle="modal" data-target="#myModal" class="btn btn-home-main"><span>Add <strong>Site</strong></span><i class="ti-plus"></i></a>
+
+                    </div>
+                    <div class="subs--top--left">
+                        <input id="filter" type="text" class="form-control" placeholder="Type here...">
+                    </div>
+                    <!-- <div class="subs-header-options">
+                      <ul>
+                        <li>button</li>
+                        <li>button</li>
+                      </ul>
+                    </div> -->
+                  <table class="table card">
+                      <thead>
+                          <tr>
+                              <th class="col-sm-4">Host</th>
+                              <th class="col-md-1">Status</th>
+                              <th class="col-md-3">Path</th>
+                              <th class="col-md-2">Created</th>
+                          </tr>
+                      </thead>
+                      <tbody id="subs-table" class="searchable">
+                        <tr>
+                          <td><a href="https://example.com">example.com</a></td>
+                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                          <td>[dbx] /example.com</td>
+                          <td>23 min ago</td>
+                          <td><div style="float: right;"><button type="button" class="btn btn-xs btn-danger delete-folder-modal">Delete</button></td>
+                        </tr>
+                        <tr>
+                          <td><a href="https://subely.com">subely.com</a></td>
+                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                          <td>[dbx] /subely.com</td>
+                          <td>3 years ago</td>
+                          <td><div style="float: right;"><button type="button" class="btn btn-xs btn-danger delete-folder-modal">Delete</button></td>
+                        </tr>
+                        <tr>
+                          <td><a href="https://anotherservice.com">anotherservice.com</a></td>
+                          <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                          <td>[dbx] /anotherservice.com</td>
+                          <td>6 years ago</td>
+                          <td><div style="float: right;"><button type="button" class="btn btn-xs btn-danger delete-folder-modal">Delete</button></td>
+                        </tr>
+                      </tbody>
+                      <p id="noResults">no results</p>
+                    </table>
+                  </div>
+                </div>
+                <!-- Botton
+                <div class="home-bottom container">
+                    <div class="home-buttons row">
+                        <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-6" style=" position: fixed; z-index: 9;">
+                            <a href="services" data-change-view="true" class="btn btn-block btn-home btn-home-main ffixed"><span>View <strong>Services</strong></span><i class="ti-arrow-right"></i></a>
+                        </div>
+                        <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-6">
+                            <a href="portfolio" data-change-view="true" class="btn btn-block btn-home btn-link"><span>Browse <strong>Porftolio</strong></span><i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="text-center">
+                <ul class="nav nav-pills">
+                  <li style="width: 45%;" class="active"><a style="width: 100%; padding: 0px 0px;" data-toggle="pill" href="#add_site">Add Site</a></li>
+                  <li style="width: 45%;"><a style="width: 100%; padding: 0px 0px;"  data-toggle="pill" href="#account_details">Account details</a></li>
+                </ul>
+              </div>
+              </div>
+              <div class="modal-body">
+                <div class="tab-content">
+                  <div id="add_site" class="tab-pane fade in active">
+                    <h6 class="title col-md-8 col-md-offset-2">Subely Domain</h6>
+                    <div class="col-md-8 col-md-offset-2 input-group">
+                      <input autocomplete="off" id="add-site" type="text" class="form-control" placeholder="Sub-domain" aria-describedby="basic-addon2">
+                      <span class="input-group-addon" id="basic-addon2">.subely.me</span>
+                    </div>
+                    <div class="site-add-message">Enter a sub domain</div>
+                    <button type="button" class="btn btn-default add-site">Check</button>
+                   </div>
+                   <div id="account_details" class="tab-pane fade">
+                        <h4><b>Host:</b> </h4>
+                        <h4><b>username:</b> </h4>
+                        <h4><b>password:</b> </h4>
+                        <h4><b>database:</b> </h4>
+                   </div>
+               </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+<div style="margin-top: 100px;" id="delete-folder" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Confirmation</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this folder</p>
+        <input id="delete-dropbox-folder" value="1" type="checkbox"> Delete this folder from dropbox
+        <br>
+        <br>
+        <a type="button" class="btn btn-success delete-sub">Yes</a>
+        <a type="button" class="btn btn-success" data-dismiss="modal">Cancel</a>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+<div style="margin-top: 100px;" id="limit_folders" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Error</h4>
+      </div>
+      <div class="modal-body">
+        <p id="limit_folders_response"></p>
+        <a type="button" class="btn btn-success" data-dismiss="modal">OK</a>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+
+    </section>
+</div>
+<!-- Content / End -->
+
+<!-- Ajax Modal -->
+<div id="ajax-modal"></div>
+
+<!-- Loading Overlay -->
+<div id="loading-overlay"></div>
+
+<!-- Mobile Navigation -->
+<button id="mobile-nav-toggle" class="icon icon-sm icon-circle icon-primary" data-target="mobile-nav"><i class="ti-menu"></i><i class="ti-close"></i></button>
+<nav id="mobile-nav">
+
+</nav>
+
+<div id="tmp"></div>
+
+<!-- JS Libraries -->
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+
+<!-- JS Plugins -->
+<script src="../../assets/js/plugins.js"></script>
+
+<!-- JS Core -->
+<script src="../../assets/js/actions.js"></script>
+<script src="../../assets/js/components.js"></script>
+<script src="../../assets/js/base.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44410203-1', 'Subely.pl');
+  ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>
